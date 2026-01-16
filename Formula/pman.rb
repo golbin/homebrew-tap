@@ -1,15 +1,15 @@
 class Pman < Formula
   desc "Tmux Session/Worktree Manager TUI"
   homepage "https://github.com/golbin/pman"
-  url "https://github.com/golbin/pman/archive/refs/tags/v0.1.4.tar.gz"
-  sha256 "2ac5f6d0705ffff639971a26b38a0f346c0fd5c81ef1310580e0833360bf9e7e"
+  url "https://github.com/golbin/pman/releases/download/v0.1.4/pman-v0.1.4-darwin-arm64.tar.gz"
+  sha256 "b5b17a580154f58950fd2029d7cc022a112bed77db64fbf0de68f624dafc6def"
   license "MIT"
 
-  depends_on "rust" => :build
+  depends_on :macos
   depends_on "tmux"
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "pman"
   end
 
   def caveats
