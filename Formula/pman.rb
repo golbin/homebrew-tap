@@ -1,8 +1,8 @@
 class Pman < Formula
   desc "Tmux Session/Worktree Manager TUI"
   homepage "https://github.com/golbin/pman"
-  url "https://github.com/golbin/pman/archive/refs/tags/v0.1.3.tar.gz"
-  sha256 "e22ee644806841b218b041402b3feafaabcdc56b79b9bf8d57172cd1619df207"
+  url "https://github.com/golbin/pman/archive/refs/tags/v0.1.4.tar.gz"
+  sha256 "2ac5f6d0705ffff639971a26b38a0f346c0fd5c81ef1310580e0833360bf9e7e"
   license "MIT"
 
   depends_on "rust" => :build
